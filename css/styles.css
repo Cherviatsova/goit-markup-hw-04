@@ -107,6 +107,9 @@ body {
 }
 
 /* menu navigation */
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .navigation .menu-link.current {
   color: var(--link-color);
 }
@@ -169,9 +172,18 @@ body {
 .tel-link:focus {
   color: var(--link-color);
 }
-.header {
-  border-bottom: 1px solid #ececec;
+
+.mail-link,
+.tel-link {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border: none;
 }
+.contacts-icon {
+  margin-right: 10px;
+}
+
 /* ===========Hero============ */
 /* main section */
 .container {
