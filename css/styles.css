@@ -103,7 +103,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  /* color: #ffffff; */
+  color: #ffffff;
 }
 
 /* menu navigation */
@@ -180,6 +180,7 @@ body {
   padding: 0;
   border: none;
 }
+
 .contacts-icon {
   margin-right: 10px;
 }
@@ -245,7 +246,7 @@ body {
   color: var(--link-color);
 }
 .modal-button:active {
-  background: #2196f3;
+  background: var(--link-color);
 }
 
 /* about company's concept section */
@@ -258,6 +259,18 @@ body {
 }
 .concept-list-item:not(:last-child) {
   margin-right: 30px;
+}
+.concept-list-item {
+  display: flex;
+  flex-direction: column;
+}
+.concept-icon {
+  width: 270px;
+  text-align: center;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
 }
 
 .concept-list-title {
@@ -274,6 +287,7 @@ body {
   text-transform: uppercase;
 }
 .concept-list-title-text {
+  text-align: left;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
@@ -293,7 +307,8 @@ body {
   margin-bottom: 50px;
 }
 .specification-title,
-.teammate-title {
+.teammate-title,
+.client-title {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
@@ -332,7 +347,14 @@ body {
 .team-list-item:not(:last-child) {
   margin-right: 30px;
 }
+.team-list-item {
+  background: #ffffff;
+  /* material shadow v1 */
 
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .team-image {
   padding: 30px 32px 30px 32px;
 }
@@ -345,6 +367,40 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+.network {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.network-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* Clients */
+.clients {
+  padding: 94px 0;
+}
+.client-title {
+  margin-bottom: 50px;
+}
+.client-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.client-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.icon-image {
+  text-align: center;
+  padding: 23px 65px 22.3px 64px;
+  width: 170px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 /* Hero portfolio */
@@ -454,8 +510,17 @@ body {
 
 /* footer */
 .footer {
+  max-width: 1600px;
+  height: 252px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
+  background-position: center;
+  background-color: #2f303a;
+}
+.contacts {
+  margin-right: 70px;
 }
 .contact-item {
   display: block;
@@ -466,7 +531,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  /* color: #ffffff; */
+  color: #ffffff;
 }
 .contact-list-item:not(:last-child) {
   margin-bottom: 8px;
@@ -479,7 +544,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  /* color: rgba(255, 255, 255, 0.6); */
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .contacts-mail:focus,
@@ -494,4 +559,27 @@ body {
 
 .footerlink {
   margin-bottom: 20px;
+}
+.footer-title {
+  margin-bottom: 20px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer-common {
+  display: flex;
+  align-items: baseline;
+}
+.footer-network-list {
+  display: flex;
+}
+.footer-icon:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-network-icon {
 }
