@@ -376,8 +376,8 @@ body {
   margin-bottom: 30px;
 }
 
-.network-item:not(:last-child) {
-  margin-right: 10px;
+.network-icon-icon {
+  fill: #afb1b8;
 }
 
 /* Clients */
