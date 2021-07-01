@@ -183,6 +183,7 @@ body {
 
 .contacts-icon {
   margin-right: 10px;
+  fill: currentColor;
 }
 
 /* ===========Hero============ */
