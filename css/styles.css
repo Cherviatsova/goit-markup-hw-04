@@ -349,9 +349,8 @@ body {
   margin-right: 30px;
 }
 .team-list-item {
+  padding-bottom: 30px;
   background: #ffffff;
-  /* material shadow v1 */
-
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -373,13 +372,30 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
 }
 
+.network-item:not(:last-child) {
+  margin-right: 10px;
+}
+.network-item {
+  display: flex;
+}
+.network-icon {
+  align-items: center;
+  padding: 12px;
+  border-radius: 50px;
+  color: var(--text-color);
+}
+.network-icon:hover {
+  color: #ffffff;
+  background-color: var(--link-color);
+}
 .network-icon-icon {
-  fill: #afb1b8;
+  fill: currentColor;
 }
-
+.network-icon-icon:hover {
+  fill: currentColor;
+}
 /* Clients */
 .clients {
   padding: 94px 0;
@@ -389,21 +405,29 @@ body {
 }
 .client-list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .client-list-item:not(:last-child) {
   margin-right: 30px;
 }
+.client-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .icon-image {
-  text-align: center;
-  padding: 23px 65px 22.3px 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
   width: 170px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
 }
-
+/* .icon-image:hover {
+  color: var(--link-color);
+  background-color: #e5e5e5;
+} */
 /* Hero portfolio */
 .portfolio {
   padding-top: 94px;
@@ -474,12 +498,13 @@ body {
   margin-left: -30px;
   margin-top: -30px;
 }
-
+.set-list-image:hover {
+  background-color: url(2910404.jpg);
+}
 .set-list > .set-list-item {
   flex-basis: calc(100% / 3 -30px);
   margin-left: 30px;
   margin-top: 30px;
-
   box-sizing: border-box;
 }
 
@@ -579,8 +604,26 @@ body {
 .footer-network-list {
   display: flex;
 }
+.footer-icon {
+  display: flex;
+}
+.footer-network-icon {
+  align-items: center;
+  padding: 12px;
+  border-radius: 50px;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
 .footer-icon:not(:last-child) {
   margin-right: 10px;
 }
-.footer-network-icon {
+.footer-network-icon:hover {
+  color: white;
+  background-color: var(--link-color);
+}
+.footer-network-icon-icon:hover {
+  fill: currentColor;
+}
+.footer-network-icon-icon {
+  fill: currentColor;
 }
