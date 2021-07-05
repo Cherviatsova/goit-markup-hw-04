@@ -330,7 +330,12 @@ body {
 
 /* about teamates */
 .teammate {
+  max-width: 1600px;
+  height: 708px;
   padding: 94px 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f5f4fa;
 }
 .teammate-title {
   margin-bottom: 50px;
@@ -386,8 +391,11 @@ body {
   display: flex;
 }
 .network-icon {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 12px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   color: var(--icon-color);
 }
@@ -629,8 +637,11 @@ body {
   display: flex;
 }
 .footer-network-icon {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 12px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   color: white;
   background: rgba(255, 255, 255, 0.1);
